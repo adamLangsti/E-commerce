@@ -1,0 +1,12 @@
+@mixin reset {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin flex-center($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}

@@ -1,0 +1,28 @@
+@import 'colors';
+@import 'functions';
+@import 'config';
+@import 'mixin';
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $navbar-color;
+  height: $min-height;
+  overflow: hidden;
+  h1 {
+    color: set-color($primary-color);
+  }
+  ul {
+    display: flex;
+    list-style-type: none;
+    a {
+      color: $white;
+      text-decoration: none;
+      font-family: Helvetica, sans-serif;
+    }
+  }
+  .nav-links {
+    font-size: 1.2em;
+  }
+}

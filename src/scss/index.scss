@@ -1,5 +1,7 @@
-@import 'colors';
+@import 'navbar';
+@import 'config';
+@import 'mixin';
 
-h1 {
-  color: $primary-color;
+body {
+  @include reset;
 }
