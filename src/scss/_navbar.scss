@@ -21,8 +21,9 @@ nav {
       text-decoration: none;
       font-family: Helvetica, sans-serif;
       &:hover {
+        color: black;
         padding: 0.5em 1em;
-        background-color: #6d76f7;
+        background-color: $white;
         border-radius: 4px;
         transition: all 0.2s ease-out;
       }

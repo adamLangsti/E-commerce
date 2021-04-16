@@ -3,7 +3,7 @@ nav {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  background-color: #6400b6;
+  background-color: #1c3244;
   height: 100px;
   overflow: hidden;
 }
@@ -25,8 +25,9 @@ nav ul a {
 }
 
 nav ul a:hover {
+  color: black;
   padding: 0.5em 1em;
-  background-color: #6d76f7;
+  background-color: #fff;
   border-radius: 4px;
   transition: all 0.2s ease-out;
 }
