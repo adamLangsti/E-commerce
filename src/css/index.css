@@ -2,24 +2,33 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
   background-color: #6400b6;
   height: 100px;
   overflow: hidden;
 }
 
-nav h1 {
-  color: #fff;
-}
-
 nav ul {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  width: 70vw;
+  justify-content: end;
   list-style-type: none;
 }
 
 nav ul a {
+  padding: 0.5em 1em;
   color: #fff;
   text-decoration: none;
   font-family: Helvetica, sans-serif;
+}
+
+nav ul a:hover {
+  padding: 0.5em 1em;
+  background-color: #6d76f7;
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
 }
 
 nav .nav-links {

@@ -4,22 +4,28 @@
 @import 'mixin';
 
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center(row);
   background-color: $navbar-color;
   height: $min-height;
   overflow: hidden;
-  h1 {
-    color: set-color($primary-color);
-  }
   ul {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    width: 70vw;
+    justify-content: end;
     list-style-type: none;
     a {
+      padding: 0.5em 1em;
       color: $white;
       text-decoration: none;
       font-family: Helvetica, sans-serif;
+      &:hover {
+        padding: 0.5em 1em;
+        background-color: #6d76f7;
+        border-radius: 4px;
+        transition: all 0.2s ease-out;
+      }
     }
   }
   .nav-links {
