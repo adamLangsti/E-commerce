@@ -8,7 +8,9 @@ nav {
   background-color: $navbar-color;
   height: $min-height;
   overflow: hidden;
+  width: clamp(375px, 100%, 100%);
   ul {
+    @include mini-mobile;
     display: grid;
     grid-template-columns: repeat(5, auto);
     grid-gap: 10px;
@@ -31,5 +33,11 @@ nav {
   }
   .nav-links {
     font-size: 1.2em;
+  }
+}
+
+@media (max-width: $mobile-break - 188px) {
+  .logo {
+    display: none;
   }
 }

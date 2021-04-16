@@ -5,7 +5,7 @@ import logo from '../../images/logo.jpg';
 const Navbar = () => {
     return (
         <nav>
-            <img src={logo} alt='ecom' />
+            <img src={logo} alt='ecom' className="logo" />
             <ul>
                 {NavbarItems.map((item, index) => {
                     return (

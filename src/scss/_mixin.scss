@@ -10,3 +10,19 @@
   justify-content: center;
   flex-direction: $direction;
 }
+
+@mixin mobile {
+  @media (max-width: $mobile-break) {
+    @content;
+  }
+}
+
+@mixin mini-mobile {
+  @media (max-width: 375px) {
+    grid-gap: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+}

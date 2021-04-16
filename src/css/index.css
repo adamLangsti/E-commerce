@@ -6,6 +6,7 @@ nav {
   background-color: #1c3244;
   height: 100px;
   overflow: hidden;
+  width: clamp(375px, 100%, 100%);
 }
 
 nav ul {
@@ -15,6 +16,16 @@ nav ul {
   width: 70vw;
   justify-content: end;
   list-style-type: none;
+}
+
+@media (max-width: 375px) {
+  nav ul {
+    grid-gap: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+  }
 }
 
 nav ul a {
@@ -36,9 +47,16 @@ nav .nav-links {
   font-size: 1.2em;
 }
 
+@media (max-width: 580px) {
+  .logo {
+    display: none;
+  }
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: #d9d9d9;
 }
 /*# sourceMappingURL=index.css.map */

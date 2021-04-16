@@ -4,4 +4,5 @@
 
 body {
   @include reset;
+  background-color: $secondary-color;
 }
