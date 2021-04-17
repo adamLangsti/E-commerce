@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const About = () => {
+    const [about, setAbout] = useState('');
+
+    const fetchAbout = async () => {
+        const response = await fetch('http://localhost:5000/about');
+        const responseText = await response.text();
+        setAbout(responseText);
+    };
+
+    useEffect(() => {
+        fetchAbout();
+    }, []);
     return (
         <div>
-            <h1>About Page</h1>
+            <p>{about}</p>
         </div>
     );
 };

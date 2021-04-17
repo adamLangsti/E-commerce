@@ -15,7 +15,7 @@ const Products = () => {
     }, []);
     return (
         <div>
-            <h1>{product}</h1>
+            <p>{product}</p>
         </div>
     );
 };
