@@ -1,27 +1,23 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import Navbar from './components/navbar/navbar';
+import React from 'react';
+import Navbar from './components/navbar';
 import './css/index.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './components/home';
+import Products from './components/products';
+import About from './components/about';
+import Contact from './components/contact';
 
 const App = () => {
-    const [apiResponse, setApiResponse] = useState('');
-
-    const callAPI = async () => {
-        const response = await fetch('http://localhost:5000/api');
-        const responseText = await response.text();
-        console.log(responseText);
-        setApiResponse(responseText);
-    };
-
-    useEffect(() => {
-        callAPI();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-
     return (
-        <div>
-            <Navbar />
-            <p>{apiResponse}</p>
-        </div>
+        <Router>
+            <div>
+                <Navbar />
+                <Route path='/' exact component={Home} />
+                <Route path='/products' component={Products} />
+                <Route path='/about' component={About} />
+                <Route path='/contact' component={Contact} />
+            </div>
+        </Router>
     );
 };
 
