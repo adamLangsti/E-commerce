@@ -17,7 +17,7 @@
   }
 }
 @mixin mobile-large {
-  @media (max-width: 1580px) {
+  @media (max-width: $mobile-break + 812px) {
     @content;
   }
 }

@@ -1,9 +1,13 @@
 @import 'navbar';
 @import 'config';
 @import 'mixin';
-@import 'products';
+@import 'category';
 
 body {
   @include reset;
   background-color: $secondary-color;
+}
+::selection {
+  background-color: $navbar-color;
+  color: $secondary-color;
 }

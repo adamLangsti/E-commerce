@@ -2,7 +2,7 @@
 @import 'mixin';
 @import 'config';
 
-.products {
+.category {
   @include mobile-large {
     flex-direction: column;
     padding-right: 10px;
@@ -16,6 +16,11 @@
     width: $image-width;
     height: $image-height;
     box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.75);
+    &:hover {
+      transform: scale(0.98);
+      transition: all 0.1s ease-out;
+      box-shadow: 10px 10px 10px 3px rgb(175, 175, 175);
+    }
   }
   li {
     list-style-type: none;
@@ -26,3 +31,4 @@
     text-align: center;
   }
 }
+
