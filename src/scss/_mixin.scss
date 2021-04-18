@@ -16,7 +16,11 @@
     @content;
   }
 }
-
+@mixin mobile-large {
+  @media (max-width: 1580px) {
+    @content;
+  }
+}
 @mixin mini-mobile {
   @media (max-width: 375px) {
     grid-gap: 0;

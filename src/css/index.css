@@ -53,6 +53,40 @@ nav .nav-links {
   }
 }
 
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+@media (max-width: 1580px) {
+  .products {
+    flex-direction: column;
+    padding-right: 10px;
+    flex-flow: wrap;
+  }
+}
+
+.products img {
+  border: 3px solid #fff;
+  max-width: clamp(200px, 100%, 100%);
+  width: 450px;
+  height: 360px;
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.75);
+}
+
+.products li {
+  list-style-type: none;
+  margin: 10px;
+}
+
+.products h2 {
+  font-family: 'Orelega One', sans-serif;
+  text-align: center;
+}
+
 body {
   box-sizing: border-box;
   margin: 0;

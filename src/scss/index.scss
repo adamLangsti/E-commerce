@@ -1,6 +1,7 @@
 @import 'navbar';
 @import 'config';
 @import 'mixin';
+@import 'products';
 
 body {
   @include reset;

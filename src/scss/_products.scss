@@ -1,0 +1,28 @@
+@import 'colors';
+@import 'mixin';
+@import 'config';
+
+.products {
+  @include mobile-large {
+    flex-direction: column;
+    padding-right: 10px;
+    flex-flow: wrap;
+  }
+  @include flex-center(row);
+  margin: 0 auto;
+  img {
+    border: 3px solid #fff;
+    max-width: clamp(200px, 100%, 100%);
+    width: $image-width;
+    height: $image-height;
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.75);
+  }
+  li {
+    list-style-type: none;
+    margin: 10px;
+  }
+  h2 {
+    font-family: 'Orelega One', sans-serif;
+    text-align: center;
+  }
+}
