@@ -10,8 +10,9 @@
   }
   @include flex-center(row);
   margin: 0 auto;
+  padding-top: 60px;
   .images {
-    border: 3px solid #fff;
+    border: 3px solid $white;
     max-width: clamp(200px, 100%, 100%);
     width: $image-width;
     height: $image-height;
@@ -26,9 +27,16 @@
     list-style-type: none;
     margin: 10px;
   }
-  h2 {
+  h1 {
     color: $primary-color;
     font-family: 'Orelega One', sans-serif;
+    font-size: 28px;
     text-align: center;
   }
+}
+
+.sub-category-items {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }

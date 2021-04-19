@@ -5,8 +5,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
-import Categories from './components/Categories';
-import SubCategories from './components/SubCategories';
+import Categories from './components/categories/Categories';
+import SubCategories from './components/categories/SubCategories';
 import Footer from './components/Footer';
 
 const App = () => {
@@ -19,7 +19,7 @@ const App = () => {
                 <Route path='/about' component={About} />
                 <Route path='/contact' component={Contact} />
                 <Route path='/sub-categories' component={SubCategories} />
-                <Footer />
+                {/* <Footer /> */}
             </div>
         </Router>
     );

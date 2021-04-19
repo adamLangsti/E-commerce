@@ -9,13 +9,23 @@ const Footer = () => {
         <div className='footer'>
             <footer>
                 <ul>
-                    <li>Info</li>
-                    <li>Support</li>
-                    <li>Marketing</li>
+                    <a href='/'>
+                        <li>Info</li>
+                    </a>
+                    <a href='/'>
+                        <li>Support</li>
+                    </a>
+                    <a href='/'>
+                        <li>Marketing</li>
+                    </a>
                 </ul>
                 <ul>
-                    <li>Terms of Use</li>
-                    <li>Privacy Policy</li>
+                    <a href='/'>
+                        <li>Terms of Use</li>
+                    </a>
+                    <a href='/'>
+                        <li>Privacy Policy</li>
+                    </a>
                 </ul>
             </footer>
             <small>&copy; Copyright. All rights reserved. {getYear()}</small>

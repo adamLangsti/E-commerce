@@ -17,14 +17,14 @@ const Categories = () => {
         <div className='category'>
             {category.map((category, index) => (
                 <li key={index}>
-                    <a href={category.subCategory.link}>
+                    <a href={category.link}>
                         <img
                             className='images'
                             src={category.image}
                             alt='media'
                         />
                     </a>
-                    <h2>{category.name}</h2>
+                    <h1>{category.name}</h1>
                 </li>
             ))}
         </div>
