@@ -5,7 +5,7 @@ const Home = () => {
 
     const fetchHome = async () => {
         const response = await fetch('http://localhost:5000');
-        const responseText = await response.text();
+        const responseText = await response.json();
         console.log(responseText);
         setHome(responseText);
     };
@@ -15,7 +15,7 @@ const Home = () => {
     }, []);
     return (
         <div>
-            <p>{home}</p>
+            <p>{home.map((text) => <h1>{text.title}</h1>)}</p>
         </div>
     );
 };

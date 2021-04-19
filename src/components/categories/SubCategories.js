@@ -14,14 +14,15 @@ const SubCategories = () => {
         fetchSub();
     }, []);
     return (
-        <div className='category'>
+        <div className='sub-category'>
             {subCategory.map((subCat, index) => (
                 <li key={index} className='sub-category-items'>
                     <a href='/'>
-                        <img className='images' src={subCat.image} alt='alt' />
+                        <img src={subCat.image} alt='alt' />
                     </a>
                     <h1>{subCat.name}</h1>
                     <h2>{subCat.desc}</h2>
+                    <h3>{subCat.price}</h3>
                 </li>
             ))}
         </div>
