@@ -7,16 +7,20 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Categories from './components/Categories';
 import SubCategories from './components/SubCategories';
+import Footer from './components/Footer';
 
 const App = () => {
     return (
         <Router>
-            <Navbar />
-            <Route path='/' exact component={Home} />
-            <Route path='/categories' component={Categories} />
-            <Route path='/about' component={About} />
-            <Route path='/contact' component={Contact} />
-            <Route path='/sub-categories' component={SubCategories} />
+            <div className="container">
+                <Navbar />
+                <Route path='/' exact component={Home} />
+                <Route path='/categories' component={Categories} />
+                <Route path='/about' component={About} />
+                <Route path='/contact' component={Contact} />
+                <Route path='/sub-categories' component={SubCategories} />
+                <Footer />
+            </div>
         </Router>
     );
 };

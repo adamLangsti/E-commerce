@@ -18,7 +18,11 @@ const Categories = () => {
             {category.map((category, index) => (
                 <li key={index}>
                     <a href={category.subCategory.link}>
-                        <img src={category.image} alt='media' />
+                        <img
+                            className='images'
+                            src={category.image}
+                            alt='media'
+                        />
                     </a>
                     <h2>{category.name}</h2>
                 </li>

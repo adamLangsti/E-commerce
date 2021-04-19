@@ -1,0 +1,26 @@
+@import 'colors';
+@import 'config';
+.footer {
+  @include flex-center(column);
+  background-color: $navbar-color;
+  position: relative;
+  top: 100%;
+  width: clamp(500px, 100%, 100%);
+  height: $min-height;
+  padding: 10px;
+  footer {
+    @include flex-center(row);
+  }
+  ul {
+    margin: 0;
+  }
+  li {
+    list-style-type: none;
+    color: #fff;
+  }
+  small {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 14px;
+  }
+}

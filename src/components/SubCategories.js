@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 
 const SubCategories = () => {
@@ -14,11 +15,13 @@ const SubCategories = () => {
         fetchSub();
     }, []);
     return (
-        <div>
+        <div className='category'>
             {sub.map((sub, index) => (
                 <li key={index}>
                     {sub.name}
-                    <img src={sub.image} alt="alt" />
+                    <img src={sub.image} alt='alt' />
+                    <img src={sub.image} alt='alt' />
+                    <img src={sub.image} alt='alt' />
                 </li>
             ))}
         </div>

@@ -2,10 +2,14 @@
 @import 'config';
 @import 'mixin';
 @import 'category';
+@import 'footer';
 
 body {
   @include reset;
   background-color: $secondary-color;
+}
+.container {
+  height: 75vh;
 }
 ::selection {
   background-color: $navbar-color;
