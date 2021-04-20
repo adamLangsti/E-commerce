@@ -6,19 +6,19 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Categories from './components/categories/Categories';
-import SubCategories from './components/categories/Laptops';
 import Footer from './components/Footer';
+import Laptops from './components/categories/Laptops';
 
 const App = () => {
     return (
         <Router>
-            <div className="container">
+            <div className='container'>
                 <Navbar />
                 <Route path='/' exact component={Home} />
                 <Route path='/categories' component={Categories} />
                 <Route path='/about' component={About} />
                 <Route path='/contact' component={Contact} />
-                <Route path='/sub-categories' component={SubCategories} />
+                <Route path='/laptops' component={Laptops} />
                 {/* <Footer /> */}
             </div>
         </Router>

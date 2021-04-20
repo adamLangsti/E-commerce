@@ -14,9 +14,9 @@ const Laptops = () => {
         fetchLaptops();
     }, []);
     return (
-        <div className='laptops'>
+        <div className='laptop'>
             {laptop.map((laptop, index) => (
-                <li key={index} className='sub-category-items'>
+                <li key={index}>
                     <a href='/'>
                         <img src={laptop.image} alt='alt' />
                         <h1>{laptop.name}</h1>

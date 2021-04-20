@@ -1,9 +1,9 @@
 @import 'category';
 
-.laptops {
+.laptop {
   @extend .category;
   flex-flow: wrap;
-  .sub-category-items {
+  li {
     display: flex;
     flex-direction: column;
     padding-left: $medium-padding;

@@ -53,7 +53,7 @@ nav .nav-links {
   }
 }
 
-.category, .laptops {
+.category, .laptop {
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -61,14 +61,14 @@ nav .nav-links {
 }
 
 @media (max-width: 1580px) {
-  .category, .laptops {
+  .category, .laptop {
     flex-direction: column;
     padding-right: 10px;
     flex-flow: wrap;
   }
 }
 
-.category .images, .laptops .images, .laptops .sub-category-items img {
+.category .images, .laptop .images, .category .laptop li img, .laptop li .category img, .laptop li img {
   border: 3px solid #fff;
   max-width: clamp(200px, 100%, 100%);
   width: 450px;
@@ -76,18 +76,18 @@ nav .nav-links {
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.75);
 }
 
-.category .images:hover, .laptops .images:hover, .laptops .sub-category-items img:hover {
+.category .images:hover, .laptop .images:hover, .category .laptop li img:hover, .laptop li .category img:hover, .laptop li img:hover {
   transform: scaleX(1.02) scaleY(1.02);
   transition: all 0.1s ease-out;
   box-shadow: 5px 5px 5px 1.5px #2b2b2b;
 }
 
-.category li, .laptops li {
+.category li, .laptop li {
   list-style-type: none;
   margin: 10px;
 }
 
-.category h1, .laptops h1 {
+.category h1, .laptop h1 {
   color: #292929;
   font-family: 'Orelega One', sans-serif;
   font-size: 28px;
@@ -137,7 +137,7 @@ nav .nav-links {
   margin-left: 2.5em;
 }
 
-.category, .laptops {
+.category, .laptop {
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -145,14 +145,14 @@ nav .nav-links {
 }
 
 @media (max-width: 1580px) {
-  .category, .laptops {
+  .category, .laptop {
     flex-direction: column;
     padding-right: 10px;
     flex-flow: wrap;
   }
 }
 
-.category .images, .laptops .images, .laptops .sub-category-items img {
+.category .images, .laptop .images, .category .laptop li img, .laptop li .category img, .laptop li img {
   border: 3px solid #fff;
   max-width: clamp(200px, 100%, 100%);
   width: 450px;
@@ -160,18 +160,18 @@ nav .nav-links {
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.75);
 }
 
-.category .images:hover, .laptops .images:hover, .laptops .sub-category-items img:hover {
+.category .images:hover, .laptop .images:hover, .category .laptop li img:hover, .laptop li .category img:hover, .laptop li img:hover {
   transform: scaleX(1.02) scaleY(1.02);
   transition: all 0.1s ease-out;
   box-shadow: 5px 5px 5px 1.5px #2b2b2b;
 }
 
-.category li, .laptops li {
+.category li, .laptop li {
   list-style-type: none;
   margin: 10px;
 }
 
-.category h1, .laptops h1 {
+.category h1, .laptop h1 {
   color: #292929;
   font-family: 'Orelega One', sans-serif;
   font-size: 28px;
@@ -179,23 +179,23 @@ nav .nav-links {
   margin-bottom: 0;
 }
 
-.laptops {
+.laptop {
   flex-flow: wrap;
 }
 
-.laptops .sub-category-items {
+.laptop li {
   display: flex;
   flex-direction: column;
   padding-left: 50px;
   padding-right: 50px;
 }
 
-.laptops .sub-category-items img {
+.laptop li img {
   width: 300px;
   height: 240px;
 }
 
-.laptops .sub-category-items h2 {
+.laptop li h2 {
   color: #292929;
   font-size: 14px;
   line-height: 1.4;
@@ -204,12 +204,12 @@ nav .nav-links {
   width: 300px;
 }
 
-.laptops .sub-category-items h3 {
+.laptop li h3 {
   color: #292929;
   font-size: 22px;
 }
 
-.laptops a {
+.laptop a {
   text-decoration: none;
 }
 
