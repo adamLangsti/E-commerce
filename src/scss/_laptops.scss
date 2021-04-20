@@ -1,0 +1,30 @@
+@import 'category';
+
+.laptops {
+  @extend .category;
+  flex-flow: wrap;
+  .sub-category-items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: $medium-padding;
+    padding-right: $medium-padding;
+    img {
+      @extend .images;
+      width: $image-width / 1.5;
+      height: $image-height / 1.5;
+    }
+    h2 {
+      color: $primary-color;
+      font-size: 12px;
+      line-height: 1.4;
+      text-align: center;
+      font-family: Helvetica, sans-serif;
+      width: $image-width / 1.5;
+    }
+    h3 {
+      color: $primary-color;
+      font-size: 22px;
+    }
+  }
+}

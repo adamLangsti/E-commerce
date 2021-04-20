@@ -15,7 +15,11 @@ const Home = () => {
     }, []);
     return (
         <div>
-            <p>{home.map((text) => <h1>{text.title}</h1>)}</p>
+            {home.map((text, index) => (
+                <>
+                    <h1>{text.title}</h1>
+                </>
+            ))}
         </div>
     );
 };

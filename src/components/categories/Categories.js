@@ -5,9 +5,9 @@ const Categories = () => {
 
     const fetchCategories = async () => {
         const response = await fetch('http://localhost:5000/categories');
-        const responseText = await response.json();
-        setCategory(responseText);
-        console.log(responseText);
+        const responseJson = await response.json();
+        setCategory(responseJson);
+        console.log(responseJson);
     };
 
     useEffect(() => {

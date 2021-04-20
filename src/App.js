@@ -6,7 +6,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Categories from './components/categories/Categories';
-import SubCategories from './components/categories/SubCategories';
+import SubCategories from './components/categories/Laptops';
 import Footer from './components/Footer';
 
 const App = () => {

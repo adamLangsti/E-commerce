@@ -18,7 +18,7 @@
     height: $image-height;
     box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.75);
     &:hover {
-      transform: scaleX(0.98) scaleY(0.98);
+      transform: scaleX(1.02) scaleY(1.02);
       transition: all 0.1s ease-out;
       box-shadow: 5px 5px 5px 1.5px rgb(43, 43, 43);
     }
@@ -32,32 +32,5 @@
     font-family: 'Orelega One', sans-serif;
     font-size: 28px;
     text-align: center;
-  }
-}
-
-.sub-category {
-  @extend .category;
-  .sub-category-items {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-left: $medium-padding;
-    padding-right: $medium-padding;
-    img {
-      @extend .images;
-      width: $image-width / 1.5;
-      height: $image-height / 1.5;
-    }
-    h2 {
-      color: $primary-color;
-      font-size: 12px;
-      line-height: 1.4;
-      text-align: center;
-      font-family: Helvetica, sans-serif;
-      width: $image-width / 1.5;
-    }
-    h3 {
-      color: $primary-color;
-    }
   }
 }
