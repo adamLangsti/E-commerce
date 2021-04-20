@@ -213,6 +213,20 @@ nav .nav-links {
   text-decoration: none;
 }
 
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.home-container h1 {
+  font-size: 30px;
+  font-family: Helvetica, sans-serif;
+  color: #292929;
+  max-width: 1440px;
+}
+
 body {
   box-sizing: border-box;
   margin: 0;

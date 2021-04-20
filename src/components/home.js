@@ -5,20 +5,18 @@ const Home = () => {
 
     const fetchHome = async () => {
         const response = await fetch('http://localhost:5000');
-        const responseText = await response.json();
-        console.log(responseText);
-        setHome(responseText);
+        const responseJson = await response.json();
+        console.log(responseJson);
+        setHome(responseJson);
     };
 
     useEffect(() => {
         fetchHome();
     }, []);
     return (
-        <div>
+        <div className='home-container'>
             {home.map((text, index) => (
-                <>
-                    <h1>{text.title}</h1>
-                </>
+                <h1 key={index}>{text.header}</h1>
             ))}
         </div>
     );

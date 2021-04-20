@@ -1,0 +1,13 @@
+@import 'mixin';
+@import 'colors';
+@import "config";
+
+.home-container {
+  @include flex-center(row);
+  h1 {
+    font-size: 30px;
+    font-family: Helvetica, sans-serif;
+    color: $primary-color;
+    max-width: $content-width;
+  }
+}
