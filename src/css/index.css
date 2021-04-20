@@ -55,9 +55,7 @@ nav .nav-links {
 
 .category, .laptops {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: row;
   margin: 0 auto;
   padding-top: 60px;
 }
@@ -94,6 +92,7 @@ nav .nav-links {
   font-family: 'Orelega One', sans-serif;
   font-size: 28px;
   text-align: center;
+  margin-bottom: 0;
 }
 
 .footer {
@@ -140,9 +139,7 @@ nav .nav-links {
 
 .category, .laptops {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: row;
   margin: 0 auto;
   padding-top: 60px;
 }
@@ -179,6 +176,7 @@ nav .nav-links {
   font-family: 'Orelega One', sans-serif;
   font-size: 28px;
   text-align: center;
+  margin-bottom: 0;
 }
 
 .laptops {
@@ -187,7 +185,6 @@ nav .nav-links {
 
 .laptops .sub-category-items {
   display: flex;
-  align-items: center;
   flex-direction: column;
   padding-left: 50px;
   padding-right: 50px;
@@ -200,7 +197,7 @@ nav .nav-links {
 
 .laptops .sub-category-items h2 {
   color: #292929;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.4;
   text-align: center;
   font-family: Helvetica, sans-serif;
@@ -210,6 +207,10 @@ nav .nav-links {
 .laptops .sub-category-items h3 {
   color: #292929;
   font-size: 22px;
+}
+
+.laptops a {
+  text-decoration: none;
 }
 
 body {

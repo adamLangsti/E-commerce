@@ -8,7 +8,8 @@
     padding-right: 10px;
     flex-flow: wrap;
   }
-  @include flex-center(row);
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   padding-top: 60px;
   .images {
@@ -32,5 +33,6 @@
     font-family: 'Orelega One', sans-serif;
     font-size: 28px;
     text-align: center;
+    margin-bottom: 0;
   }
 }

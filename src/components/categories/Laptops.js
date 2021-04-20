@@ -19,10 +19,9 @@ const Laptops = () => {
                 <li key={index} className='sub-category-items'>
                     <a href='/'>
                         <img src={laptop.image} alt='alt' />
+                        <h1>{laptop.name}</h1>
                     </a>
-                    <h1>{laptop.name}</h1>
                     <h2>{laptop.desc}</h2>
-                    <h3>{laptop.price}</h3>
                 </li>
             ))}
         </div>
