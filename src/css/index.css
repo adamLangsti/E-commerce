@@ -53,7 +53,7 @@ nav .nav-links {
   }
 }
 
-.category, .laptop {
+.category, .laptop, .apple {
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -61,14 +61,14 @@ nav .nav-links {
 }
 
 @media (max-width: 1580px) {
-  .category, .laptop {
+  .category, .laptop, .apple {
     flex-direction: column;
     padding-right: 10px;
     flex-flow: wrap;
   }
 }
 
-.category .images, .laptop .images, .category .laptop li img, .laptop li .category img, .laptop li img {
+.category .images, .laptop .images, .apple .images, .category .laptop li img, .laptop li .category img, .laptop li img, .category .apple img, .apple .category img, .apple img {
   border: 3px solid #fff;
   max-width: clamp(200px, 100%, 100%);
   width: 450px;
@@ -76,18 +76,18 @@ nav .nav-links {
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.75);
 }
 
-.category .images:hover, .laptop .images:hover, .category .laptop li img:hover, .laptop li .category img:hover, .laptop li img:hover {
+.category .images:hover, .laptop .images:hover, .apple .images:hover, .category .laptop li img:hover, .laptop li .category img:hover, .laptop li img:hover, .category .apple img:hover, .apple .category img:hover, .apple img:hover {
   transform: scaleX(1.02) scaleY(1.02);
   transition: all 0.1s ease-out;
   box-shadow: 5px 5px 5px 1.5px #2b2b2b;
 }
 
-.category li, .laptop li {
+.category li, .laptop li, .apple li {
   list-style-type: none;
   margin: 10px;
 }
 
-.category h1, .laptop h1 {
+.category h1, .laptop h1, .apple h1 {
   color: #292929;
   font-family: 'Orelega One', sans-serif;
   font-size: 28px;
@@ -137,7 +137,7 @@ nav .nav-links {
   margin-left: 2.5em;
 }
 
-.category, .laptop {
+.category, .laptop, .apple {
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -145,14 +145,14 @@ nav .nav-links {
 }
 
 @media (max-width: 1580px) {
-  .category, .laptop {
+  .category, .laptop, .apple {
     flex-direction: column;
     padding-right: 10px;
     flex-flow: wrap;
   }
 }
 
-.category .images, .laptop .images, .category .laptop li img, .laptop li .category img, .laptop li img {
+.category .images, .laptop .images, .apple .images, .category .laptop li img, .laptop li .category img, .laptop li img, .category .apple img, .apple .category img, .apple img {
   border: 3px solid #fff;
   max-width: clamp(200px, 100%, 100%);
   width: 450px;
@@ -160,18 +160,18 @@ nav .nav-links {
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.75);
 }
 
-.category .images:hover, .laptop .images:hover, .category .laptop li img:hover, .laptop li .category img:hover, .laptop li img:hover {
+.category .images:hover, .laptop .images:hover, .apple .images:hover, .category .laptop li img:hover, .laptop li .category img:hover, .laptop li img:hover, .category .apple img:hover, .apple .category img:hover, .apple img:hover {
   transform: scaleX(1.02) scaleY(1.02);
   transition: all 0.1s ease-out;
   box-shadow: 5px 5px 5px 1.5px #2b2b2b;
 }
 
-.category li, .laptop li {
+.category li, .laptop li, .apple li {
   list-style-type: none;
   margin: 10px;
 }
 
-.category h1, .laptop h1 {
+.category h1, .laptop h1, .apple h1 {
   color: #292929;
   font-family: 'Orelega One', sans-serif;
   font-size: 28px;
@@ -225,6 +225,102 @@ nav .nav-links {
   font-family: Helvetica, sans-serif;
   color: #292929;
   max-width: 1440px;
+}
+
+.category, .laptop, .apple {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+@media (max-width: 1580px) {
+  .category, .laptop, .apple {
+    flex-direction: column;
+    padding-right: 10px;
+    flex-flow: wrap;
+  }
+}
+
+.category .images, .laptop .images, .apple .images, .category .laptop li img, .laptop li .category img, .laptop li img, .category .apple img, .apple .category img, .apple img {
+  border: 3px solid #fff;
+  max-width: clamp(200px, 100%, 100%);
+  width: 450px;
+  height: 360px;
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.75);
+}
+
+.category .images:hover, .laptop .images:hover, .apple .images:hover, .category .laptop li img:hover, .laptop li .category img:hover, .laptop li img:hover, .category .apple img:hover, .apple .category img:hover, .apple img:hover {
+  transform: scaleX(1.02) scaleY(1.02);
+  transition: all 0.1s ease-out;
+  box-shadow: 5px 5px 5px 1.5px #2b2b2b;
+}
+
+.category li, .laptop li, .apple li {
+  list-style-type: none;
+  margin: 10px;
+}
+
+.category h1, .laptop h1, .apple h1 {
+  color: #292929;
+  font-family: 'Orelega One', sans-serif;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.laptop {
+  flex-flow: wrap;
+}
+
+.laptop li {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.laptop li img {
+  width: 300px;
+  height: 240px;
+}
+
+.laptop li h2 {
+  color: #292929;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  width: 300px;
+}
+
+.laptop li h3 {
+  color: #292929;
+  font-size: 22px;
+}
+
+.laptop a {
+  text-decoration: none;
+}
+
+.apple h2 {
+  color: #292929;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.apple h3 {
+  text-align: center;
+  color: #292929;
+  font-size: 22px;
+}
+
+.apple a {
+  text-decoration: none;
 }
 
 body {

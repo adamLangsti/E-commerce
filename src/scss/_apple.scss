@@ -1,0 +1,27 @@
+@import 'config';
+@import 'colors';
+@import 'laptops';
+
+.apple {
+  @extend .category;
+  img {
+    @extend .images;
+  }
+  h2 {
+    color: $primary-color;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    width: $image-width / 1.5;
+    margin: 0 auto;
+  }
+  h3 {
+      text-align: center;
+      color: $primary-color;
+      font-size: 22px;
+  }
+  a {
+    text-decoration: none;
+  }
+}
