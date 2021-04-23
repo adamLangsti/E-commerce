@@ -19,7 +19,7 @@ const Apple = () => {
         <div className='apple'>
             {apple.map((apple, index) => (
                 <li key={index}>
-                    <a href='/'>
+                    <a href={apple.link}>
                         <img src={apple.image} alt='apple' />
                     </a>
                     <h1>{apple.name}</h1>

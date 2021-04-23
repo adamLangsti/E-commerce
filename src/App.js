@@ -9,6 +9,7 @@ import Categories from './components/categories/Categories';
 import Footer from './components/Footer';
 import Laptops from './components/categories/Laptops';
 import Apple from './components/categories/Apple';
+import MacbookAir from './components/categories/Macbook-air';
 
 const App = () => {
     return (
@@ -21,6 +22,7 @@ const App = () => {
                 <Route path='/contact' component={Contact} />
                 <Route path='/laptops' component={Laptops} />
                 <Route path='/apple' component={Apple} />
+                <Route path='/macbook' component={MacbookAir} />
                 {/* <Footer /> */}
             </div>
         </Router>
