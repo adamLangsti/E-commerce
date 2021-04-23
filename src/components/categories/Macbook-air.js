@@ -18,7 +18,7 @@ const MacbookAir = () => {
         <div>
             <h1>
                 {macbook.map((macbook) => (
-                    <li>{macbook.name}</li>
+                    <li key={macbook.id}>{macbook.name}</li>
                 ))}
             </h1>
         </div>
